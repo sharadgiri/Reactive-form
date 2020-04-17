@@ -1,0 +1,20 @@
+<div class="main">
+    <h1>items list</h1>
+        <div class="additem">
+            <input placeholder="additem" class="addtext">
+                <button (click)="pushitem()">add</button>
+        </div>
+        <ul>
+            <li  *ngfor ="let i of items">
+                {{i}}
+                <span></span>
+            </li>
+        </ul>
+</div>   
+ 
+
+
+
+
+
+<router-outlet></router-outlet>
